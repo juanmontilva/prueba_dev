@@ -1,4 +1,16 @@
-const canvas = document.getElementById("myCanvas");
+function myFunc(theObject) {
+  theObject.make = "Toyota";
+}
+
+const mycar = {
+  make: "Honda",
+  model: "Accord",
+  year: 1998,
+};
+
+console.log(mycar.make); // "Honda"
+myFunc(mycar);
+console.log(mycar.make); // "Toyota"const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 const radioBtns = document.querySelectorAll('input[type="radio"]');
